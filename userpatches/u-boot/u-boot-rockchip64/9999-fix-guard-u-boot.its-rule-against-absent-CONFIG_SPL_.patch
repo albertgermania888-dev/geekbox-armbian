@@ -39,5 +39,3 @@ index 111111111111..222222222222 100644
  U_BOOT_ITS := u-boot.its
  $(U_BOOT_ITS): $(subst ",,$(CONFIG_SPL_FIT_SOURCE))
 	$(call if_changed,copy)
---
-Armbian

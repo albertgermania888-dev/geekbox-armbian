@@ -1,0 +1,244 @@
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'BUILD_MINIMAL': '(unset)' --> 'yes' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'IGNORE_UBOOT_PATCHES': '(unset)' --> 'yes' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'BUILD_DESKTOP': '(unset)' --> 'no' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'EXPERT': '(unset)' --> 'yes' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'BRANCH': '(unset)' --> 'current' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'NO_APT_CACHER': '(unset)' --> 'yes' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'BOARD': '(unset)' --> 'geekbox' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'KERNEL_ONLY': '(unset)' --> 'no' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'RELEASE': '(unset)' --> 'bookworm' early [0m][0m
+[0m[🌿[0m] [0mApplying cmdline param [[1;39m 'KERNEL_CONFIGURE': '(unset)' --> 'no' early [0m][0m
+[0m[💥[0m] [0mPROBLEM: don't run ./compile.sh as root or with sudo [[1;31m PROBLEM: don't run ./compile.sh as root or with sudo [0m][0m
+[0m[🌱[0m] [0muuidgen not found [[1;32m uuidgen not installed yet [0m][0m
+[0m[🌿[0m] [0mUpdating and installing basic packages on host  [[1;39m dialog uuid-runtime linux-base  [0m][0m
+[0m[🌱[0m] [0mStarting single build process [[1;32m geekbox [0m][0m
+[0m[🌱[0m] [0mSourcing board configuration [[1;32m /app/armbian-build/config/boards/geekbox.conf [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing board file config/boards/geekbox.conf [[1;36m [1;34mBOARDFAMILY[0m=[0;34m'[1;34mrockchip64[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing board file config/boards/geekbox.conf [[1;36m [1;34mBOOTBRANCH[0m=[0;34m'[1;34mbranch:master[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing board file config/boards/geekbox.conf [[1;36m [1;34mBOOTCONFIG[0m=[0;34m'[1;34mgeekbox_defconfig[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing board file config/boards/geekbox.conf [[1;36m [1;34mATF_COMPILE[0m=[0;34m'[1;34myes[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after defaulting LINUXFAMILY to BOARDFAMILY [[1;36m [1;34mLINUXFAMILY[0m=[0;34m'[1;34mrockchip64[0;34m' [0m][0m
+[0m[🌱[0m] [0mStarting main configuration[0m
+[0m[🌱[0m] [0mUsing REVISION from [[1;32m main VERSION file: '26.11.0-trunk' [0m][0m
+[0m[🌿[0m] [0mEnabling extension [[1;39m armbian-config [0m][0m
+[0m[🌿[0m] [0mEnabling extension [[1;39m uboot-binman-fix-pkg-resources [0m][0m
+[0m[🌿[0m] [0mEnabling extension [[1;39m uboot-fix-pylibfdt-swig [0m][0m
+[0m[🌱[0m] [0mSourcing family configuration [[1;32m /app/armbian-build/config/sources/families/rockchip64.conf [0m][0m
+[0m[🌿[0m] [0mEnabling extension [[1;39m rkbin-tools [0m][0m
+[0m[🌱[0m] [0mDetermined BOOT_SOC from BOOTCONFIG [[1;32m BOOT_SOC: 'rk3368'; BOOTCONFIG: 'geekbox_defconfig' [0m][0m
+[0m[🌱[0m] [0mPreparing boot configuration [[1;32m rockchip64_common::prepare_boot_configuration() [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing family config [[1;36m [1;34mKERNEL_MAJOR_MINOR[0m=[0;34m'[1;34m6.18[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing family config [[1;36m [1;34mLINUXCONFIG[0m=[0;34m'[1;34mlinux-rockchip64-current[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing family config [[1;36m [1;34mBOOTPATCHDIR[0m=[0;34m'[1;34mu-boot-rockchip64[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing family config [[1;36m [1;34mATF_COMPILE[0m=[0;34m'[1;34mno[0;34m'  [0m# (was: 'yes') [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing family config [[1;36m [1;34mNETWORKING_STACK[0m=[0;34m'[1;34msystemd-networkd[0;34m' [0m][0m
+[0m[🌱[0m] [0mSourcing arch configuration [[1;32m arm64.conf [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing arm64 arch [[1;36m [1;34mATF_COMPILER[0m=[0;34m'[1;34maarch64-linux-gnu-[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing arm64 arch [[1;36m [1;34mKERNEL_COMPILER[0m=[0;34m'[1;34maarch64-linux-gnu-[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after sourcing arm64 arch [[1;36m [1;34mUBOOT_COMPILER[0m=[0;34m'[1;34maarch64-linux-gnu-[0;34m' [0m][0m
+[0m[🌱[0m] [0mUsing NETWORKING_STACK [[1;32m NETWORKING_STACK: systemd-networkd [0m][0m
+[0m[🌱[0m] [0mAdding networking extensions [[1;32m net-systemd-networkd, net-systemd-timesyncd [0m][0m
+[0m[🌿[0m] [0mEnabling extension [[1;39m net-systemd-networkd [0m][0m
+[0m[🌿[0m] [0mEnabling extension [[1;39m net-systemd-timesyncd [0m][0m
+[0m[🌱[0m] [0mExtension manager [[1;32m processed 15 Extension Methods calls and 34 Extension Method implementations [0m][0m
+[0m[🌱[0m] [0mrockchip64_common: defaulting SERIALCON [[1;32m Setting SERIALCON to ttyS2 for SoC='rk3368' BRANCH='current' [0m][0m
+[0m[🌱[0m] [0mExtension: net-systemd-timesyncd: Adding extra packages to image [[1;32m systemd-timesyncd [0m][0m
+[0m[🌱[0m] [0mExtension: net-systemd-networkd: Adding extra packages to image [[1;32m netplan.io [0m][0m
+[0m[🌱[0m] [0mKERNELPATCHDIR is unset; using 'archive/rockchip64-6.18' [[1;32m common_defaults_for_mainline [0m][0m
+[0m[🌱[0m] [0mmainline-kernel: default to branch / rolling stable version [[1;32m Using KERNELBRANCH='branch:linux-6.18.y' for KERNEL_MAJOR_MINOR='6.18' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after late_family_config hooks [[1;36m [1;34mKERNELSOURCE[0m=[0;34m'[1;34mhttps://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after late_family_config hooks [[1;36m [1;34mKERNELBRANCH[0m=[0;34m'[1;34mbranch:linux-6.18.y[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after late_family_config hooks [[1;36m [1;34mKERNELPATCHDIR[0m=[0;34m'[1;34marchive/rockchip64-6.18[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after late_family_config hooks [[1;36m [1;34mKERNEL_PATCH_ARCHIVE_BASE[0m=[0;34m'[1;34mrockchip64[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after late_family_config hooks [[1;36m [1;34mBOOTSOURCE[0m=[0;34m'[1;34mhttps://github.com/u-boot/u-boot[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: after late_family_config hooks [[1;36m [1;34mBOOTDIR[0m=[0;34m'[1;34mu-boot[0;34m' [0m][0m
+[0m[✅[0m] [0mchange-tracking: before handling KERNEL_MAJOR_MINOR in config_post_main [[1;36m [1;34mBOOTSOURCEDIR[0m=[0;34m'[1;34mu-boot-worktree/u-boot/master[0;34m' [0m][0m
+[0m[🚸[0m] [0mNot-installing software-properties-common [[1;35m For distro 'Debian' release 'bookworm' [0m][0m
+[0m[✅[0m] [0mchange-tracking: before calling extension_finish_config [[1;36m [1;34mLINUXSOURCEDIR[0m=[0;34m'[1;34mlinux-kernel-worktree/6.18__rockchip64__arm64[0;34m' [0m][0m
+[0m[🌱[0m] [0mChecking [[1;32m basic host setup [0m][0m
+[0m[🌱[0m] [0mBuild host OS release [[1;32m noble [0m][0m
+[0m[🌱[0m] [0mBuild host architecture [[1;32m amd64 [0m][0m
+[0m[🌱[0m] [0mConfiguration prepared for BOARD build [[1;32m geekbox.conf [0m][0m
+[0m[✨[0m] [0mRepeat Build Options (early) [[1;32m ./compile.sh BOARD=geekbox BRANCH=current BUILD_DESKTOP=no BUILD_MINIMAL=yes EXPERT=yes IGNORE_UBOOT_PATCHES=yes KERNEL_CONFIGURE=no KERNEL_ONLY=no NO_APT_CACHER=yes RELEASE=bookworm [0m][0m
+[0m[🌱[0m] [0mChecked directory OK for mount options [[1;32m /app/armbian-build/.tmp ('main temporary dir') [0m][0m
+[0m[🌱[0m] [0mPreparing [[1;32m host [0m][0m
+[0m[🌱[0m] [0mPython2 not available on host release 'noble' [[1;32m ancient u-boot versions might/will fail to build [0m][0m
+[0m[🌱[0m] [0mUpdating apt host-side for installing host-side packages [[1;32m 45 packages [0m][0m
+[0m[🌱[0m] [0mInstalling host-side packages [[1;32m bison flex libbison-dev libmpc-dev libfl-dev device-tree-compiler libelf-dev libfdt-dev libusb-1.0-0-dev swig u-boot-tools dwarves imagemagick dosfstools parted gdisk fdisk arch-test lz4 pigz pbzip2 lzop zstd bc bsdextrautils cpio gettext kmod libfile-fcntllock-perl ncurses-term ntpsec-ntpdate patchutils pv expect colorized-logs aria2 axel parallel rdfind binwalk libpython3-dev libgnutls28-dev gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libc6-amd64-cross [0m][0m
+[0m[🌱[0m] [0mSyncing clock [[1;32m host [0m][0m
+[0m[🌱[0m] [0mCross arch build [[1;32m target arm64 on host amd64 [0m][0m
+grep: /proc/modules: No such file or directory
+[0m[🌱[0m] [0mchecking [[1;32m arch-test for 'arm64' [0m][0m
+[0m[🌱[0m] [0mAggregating packages [[1;32m rootfs [0m][0m
+[0m[🌱[0m] [0mPython3 version [[1;32m 3.12.3 - 'Python 3.12.3' [0m][0m
+[0m[🌱[0m] [0mpip3 version [[1;32m 26.2.1 [0m][0m
+[0m[🌱[0m] [0mInstalling pip packages for Python tools [[1;32m ff60e74162 [0m][0m
+[0m[🌱[0m] [0mDownloading get-pip.py [[1;32m from https://bootstrap.pypa.io/get-pip.py [0m][0m
+[0m[🌱[0m] [0mInstalling pip using get-pip.py [[1;32m 26.2.1 [0m][0m
+[0m[🌱[0m] [0mInstalling Python dependencies [[1;32m from /app/armbian-build/requirements.txt [0m][0m
+[0m[💥[0m] [0mKERNEL_ONLY is not supported; use new [[1;31m ./compile.sh kernel BOARD=geekbox BRANCH=current kernel [0m][0m
+[0m[💥[0m] [0merror! [[1;31m KERNEL_ONLY is set.This is not supported anymore. Please remove it, and use the new CLI commands.  [0m][0m
+[0m[💥[0m] [0m    👇👇👇 Showing logfile below 👇👇👇 [[1;31m /app/armbian-build/.tmp/logs-no-uuidgen-yet-7329-131010/015.000.aggregate_packages.log [0m][0m
+[0m[👉]    --> (81) [1;32mINFO[0m: Aggregating packages [ [1;32mrootfs[0m ]
+[0m[👉]    --> (81) [1;32mINFO[0m: Python3 version [ [1;32m3.12.3 - 'Python 3.12.3'[0m ]
+[0m[👉]    --> (81) [1;32mINFO[0m: pip3 version [ [1;32m26.2.1[0m ]
+[0m[👉]    --> (81) [1;32mINFO[0m: Installing pip packages for Python tools [ [1;32mff60e74162[0m ]
+[0m[👉]    --> (81) [0;36mCOMMAND[0m: rm -fv /app/armbian-build/cache/pip/pip_pkg_hash*
+[0m[👉]    --> (81) [1;32mINFO[0m: Downloading get-pip.py [ [1;32mfrom https://bootstrap.pypa.io/get-pip.py[0m ]
+[0m[👉]    --> (81) [0;36mCOMMAND[0m: curl -sSL -o /bin/get-pip-26.2.1.py https://bootstrap.pypa.io/get-pip.py
+[0m[👉]    --> (81) [1;32mINFO[0m: Installing pip using get-pip.py [ [1;32m26.2.1[0m ]
+[0m[👉]    --> (81) [0;36mCOMMAND[0m: env -i 'http_proxy=' 'https_proxy=' 'HTTP_PROXY=' 'HTTPS_PROXY=' 'ftp_proxy=' 'FTP_PROXY=' 'no_proxy=' 'NO_PROXY=' 'APT_PROXY_ADDR=' 'PYTHONPATH=/does/not/exist/armbian/uses/user/packages/only' 'PYTHONUSERBASE=/app/armbian-build/cache/pip/base' 'PYTHONUNBUFFERED=yes' 'PYTHONPYCACHEPREFIX=/app/armbian-build/cache/pip/pycache' 'PATH='\''/app/armbian-build/cache/pip/base/bin:/app/armbian-build/.tmp/work-no-uuidgen-yet-7329-131010/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'\''' /usr/bin/python3 /bin/get-pip-26.2.1.py --no-warn-script-location --user --root-user-action=ignore --break-system-packages pip==26.2.1
+[0m[👉]    Collecting pip==26.2.1
+[0m[👉]      Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
+[0m[👉]    Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+[0m[👉]       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 35.4 MB/s  0:00:00
+[0m[👉]    Installing collected packages: pip
+[0m[👉]    Successfully installed pip-26.2.1
+[0m[👉]    --> (86) [1;32mINFO[0m: Installing Python dependencies [ [1;32mfrom /app/armbian-build/requirements.txt[0m ]
+[0m[👉]    --> (86) [0;36mCOMMAND[0m: env -i 'http_proxy=' 'https_proxy=' 'HTTP_PROXY=' 'HTTPS_PROXY=' 'ftp_proxy=' 'FTP_PROXY=' 'no_proxy=' 'NO_PROXY=' 'APT_PROXY_ADDR=' 'PYTHONPATH=/does/not/exist/armbian/uses/user/packages/only' 'PYTHONUSERBASE=/app/armbian-build/cache/pip/base' 'PYTHONUNBUFFERED=yes' 'PYTHONPYCACHEPREFIX=/app/armbian-build/cache/pip/pycache' 'PATH='\''/app/armbian-build/cache/pip/base/bin:/app/armbian-build/.tmp/work-no-uuidgen-yet-7329-131010/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'\''' /usr/bin/python3 -m pip install --no-warn-script-location --user --root-user-action=ignore --break-system-packages -r /app/armbian-build/requirements.txt
+[0m[👉]    Collecting pylibfdt @ git+https://github.com/devicetree-org/pylibfdt.git@v1.7.2-2 (from -r /app/armbian-build/requirements.txt (line 22))
+[0m[👉]      Cloning https://github.com/devicetree-org/pylibfdt.git (to revision v1.7.2-2) to /tmp/pip-install-tc1gjgcu/pylibfdt_2b7e5f64a12245c58a7c0388c98caabb
+[0m[👉]      Running command git clone --filter=blob:none --quiet https://github.com/devicetree-org/pylibfdt.git /tmp/pip-install-tc1gjgcu/pylibfdt_2b7e5f64a12245c58a7c0388c98caabb
+[0m[👉]      Running command git checkout -q eb165330b2170dc5c1ef5af504e4a4670f9f2bb5
+[0m[👉]      Resolved https://github.com/devicetree-org/pylibfdt.git to commit eb165330b2170dc5c1ef5af504e4a4670f9f2bb5
+[0m[👉]      Installing build dependencies: started
+[0m[👉]      Installing build dependencies: finished with status 'done'
+[0m[👉]      Getting requirements to build wheel: started
+[0m[👉]      Getting requirements to build wheel: finished with status 'done'
+[0m[👉]      Preparing metadata (pyproject.toml): started
+[0m[👉]      Preparing metadata (pyproject.toml): finished with status 'done'
+[0m[👉]    Requirement already satisfied: pip==26.2.1 in ./cache/pip/base/lib/python3.12/site-packages (from -r /app/armbian-build/requirements.txt (line 8)) (26.2.1)
+[0m[👉]    Collecting setuptools==84.0.0 (from -r /app/armbian-build/requirements.txt (line 9))
+[0m[👉]      Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+[0m[👉]    Collecting pyelftools==0.33 (from -r /app/armbian-build/requirements.txt (line 10))
+[0m[👉]      Downloading pyelftools-0.33-py3-none-any.whl.metadata (1.0 kB)
+[0m[👉]    Collecting unidiff==1.0.1 (from -r /app/armbian-build/requirements.txt (line 11))
+[0m[👉]      Downloading unidiff-1.0.1-py3-none-any.whl.metadata (8.2 kB)
+[0m[👉]    Collecting GitPython==3.1.62 (from -r /app/armbian-build/requirements.txt (line 12))
+[0m[👉]      Downloading gitpython-3.1.62-py3-none-any.whl.metadata (13 kB)
+[0m[👉]    Collecting gitdb==4.0.12 (from -r /app/armbian-build/requirements.txt (line 13))
+[0m[👉]      Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+[0m[👉]    Collecting smmap==5.0.3 (from -r /app/armbian-build/requirements.txt (line 14))
+[0m[👉]      Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+[0m[👉]    Collecting unidecode==1.4.0 (from -r /app/armbian-build/requirements.txt (line 15))
+[0m[👉]      Downloading Unidecode-1.4.0-py3-none-any.whl.metadata (13 kB)
+[0m[👉]    Collecting coloredlogs==15.0.1 (from -r /app/armbian-build/requirements.txt (line 16))
+[0m[👉]      Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+[0m[👉]    Collecting PyYAML==6.0.3 (from -r /app/armbian-build/requirements.txt (line 17))
+[0m[👉]      Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+[0m[👉]    Collecting oras==0.2.43 (from -r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading oras-0.2.43-py3-none-any.whl.metadata (15 kB)
+[0m[👉]    Collecting Jinja2==3.1.6 (from -r /app/armbian-build/requirements.txt (line 19))
+[0m[👉]      Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+[0m[👉]    Collecting rich==15.0.0 (from -r /app/armbian-build/requirements.txt (line 20))
+[0m[👉]      Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+[0m[👉]    Collecting Pygments==2.21.0 (from -r /app/armbian-build/requirements.txt (line 21))
+[0m[👉]      Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+[0m[👉]    Collecting dtschema==2026.6 (from -r /app/armbian-build/requirements.txt (line 23))
+[0m[👉]      Downloading dtschema-2026.6-py3-none-any.whl.metadata (7.6 kB)
+[0m[👉]    Collecting yamllint==1.38.0 (from -r /app/armbian-build/requirements.txt (line 24))
+[0m[👉]      Downloading yamllint-1.38.0-py3-none-any.whl.metadata (4.2 kB)
+[0m[👉]    Collecting humanfriendly>=9.1 (from coloredlogs==15.0.1->-r /app/armbian-build/requirements.txt (line 16))
+[0m[👉]      Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+[0m[👉]    Collecting jsonschema (from oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+[0m[👉]    Collecting requests (from oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+[0m[👉]    Collecting MarkupSafe>=2.0 (from Jinja2==3.1.6->-r /app/armbian-build/requirements.txt (line 19))
+[0m[👉]      Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+[0m[👉]    Collecting markdown-it-py>=2.2.0 (from rich==15.0.0->-r /app/armbian-build/requirements.txt (line 20))
+[0m[👉]      Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+[0m[👉]    Collecting ruamel.yaml>0.15.69 (from dtschema==2026.6->-r /app/armbian-build/requirements.txt (line 23))
+[0m[👉]      Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+[0m[👉]    Collecting rfc3987 (from dtschema==2026.6->-r /app/armbian-build/requirements.txt (line 23))
+[0m[👉]      Downloading rfc3987-1.3.8-py2.py3-none-any.whl.metadata (7.5 kB)
+[0m[👉]    Collecting pathspec>=1.0.0 (from yamllint==1.38.0->-r /app/armbian-build/requirements.txt (line 24))
+[0m[👉]      Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+[0m[👉]    Collecting attrs>=22.2.0 (from jsonschema->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+[0m[👉]    Collecting jsonschema-specifications>=2023.03.6 (from jsonschema->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+[0m[👉]    Collecting referencing>=0.28.4 (from jsonschema->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+[0m[👉]    Collecting rpds-py>=0.25.0 (from jsonschema->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+[0m[👉]    Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich==15.0.0->-r /app/armbian-build/requirements.txt (line 20))
+[0m[👉]      Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+[0m[👉]    Collecting typing-extensions>=4.4.0 (from referencing>=0.28.4->jsonschema->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+[0m[👉]    Collecting charset_normalizer<4,>=2 (from requests->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading charset_normalizer-3.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+[0m[👉]    Collecting idna<4,>=2.5 (from requests->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+[0m[👉]    Collecting urllib3<3,>=1.26 (from requests->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+[0m[👉]    Collecting certifi>=2023.5.7 (from requests->oras==0.2.43->-r /app/armbian-build/requirements.txt (line 18))
+[0m[👉]      Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+[0m[👉]    Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+[0m[👉]    Downloading pyelftools-0.33-py3-none-any.whl (201 kB)
+[0m[👉]    Downloading unidiff-1.0.1-py3-none-any.whl (18 kB)
+[0m[👉]    Downloading gitpython-3.1.62-py3-none-any.whl (222 kB)
+[0m[👉]    Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+[0m[👉]    Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+[0m[👉]    Downloading Unidecode-1.4.0-py3-none-any.whl (235 kB)
+[0m[👉]    Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+[0m[👉]    Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+[0m[👉]       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 25.8 MB/s  0:00:00
+[0m[👉]    Downloading oras-0.2.43-py3-none-any.whl (72 kB)
+[0m[👉]    Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+[0m[👉]    Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+[0m[👉]    Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+[0m[👉]       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 61.9 MB/s  0:00:00
+[0m[👉]    Downloading dtschema-2026.6-py3-none-any.whl (121 kB)
+[0m[👉]    Downloading yamllint-1.38.0-py3-none-any.whl (68 kB)
+[0m[👉]    Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+[0m[👉]    Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+[0m[👉]    Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+[0m[👉]    Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+[0m[👉]    Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+[0m[👉]    Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+[0m[👉]    Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+[0m[👉]    Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+[0m[👉]    Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+[0m[👉]    Downloading rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (366 kB)
+[0m[👉]    Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+[0m[👉]    Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+[0m[👉]    Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+[0m[👉]    Downloading charset_normalizer-3.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (248 kB)
+[0m[👉]    Downloading idna-3.20-py3-none-any.whl (69 kB)
+[0m[👉]    Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+[0m[👉]    Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+[0m[👉]    Downloading rfc3987-1.3.8-py2.py3-none-any.whl (13 kB)
+[0m[👉]    Building wheels for collected packages: pylibfdt
+[0m[👉]      Building wheel for pylibfdt (pyproject.toml): started
+[0m[👉]      Building wheel for pylibfdt (pyproject.toml): finished with status 'done'
+[0m[👉]      Created wheel for pylibfdt: filename=pylibfdt-1.7.2.post2-cp312-cp312-linux_x86_64.whl size=266739 sha256=6f28c99e8ceef619fe50d434b1136e12748d0ace8170eb228ebc8489b3dd833b
+[0m[👉]      Stored in directory: /tmp/pip-ephem-wheel-cache-f754vtnp/wheels/1a/14/b4/079d335143338e58453c68cb632677c83e469bbe0185b2c1b1
+[0m[👉]    Successfully built pylibfdt
+[0m[👉]    Installing collected packages: rfc3987, pylibfdt, urllib3, unidiff, unidecode, typing-extensions, smmap, setuptools, ruamel.yaml, rpds-py, PyYAML, Pygments, pyelftools, pathspec, mdurl, MarkupSafe, idna, humanfriendly, charset_normalizer, certifi, attrs, yamllint, requests, referencing, markdown-it-py, Jinja2, gitdb, coloredlogs, rich, jsonschema-specifications, GitPython, jsonschema, oras, dtschema
+[0m[👉]    Successfully installed GitPython-3.1.62 Jinja2-3.1.6 MarkupSafe-3.0.3 PyYAML-6.0.3 Pygments-2.21.0 attrs-26.1.0 certifi-2026.7.22 charset_normalizer-3.5.1 coloredlogs-15.0.1 dtschema-2026.6 gitdb-4.0.12 humanfriendly-10.0 idna-3.20 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 markdown-it-py-4.2.0 mdurl-0.1.2 oras-0.2.43 pathspec-1.1.1 pyelftools-0.33 pylibfdt-1.7.2.post2 referencing-0.37.0 requests-2.34.2 rfc3987-1.3.8 rich-15.0.0 rpds-py-2026.6.3 ruamel.yaml-0.19.1 setuptools-84.0.0 smmap-5.0.3 typing-extensions-4.16.0 unidecode-1.4.0 unidiff-1.0.1 urllib3-2.8.0 yamllint-1.38.0
+[0m[👉]    --> (109) [0;36mCOMMAND[0m: touch /app/armbian-build/cache/pip/pip_pkg_hash_ff60e741626a141411e9d033e09547e1c77a9dfbcd16786d9cd572300c8f15ac
+[0m[👉]    --> (109) [0;36mCOMMAND[0m: [...shortened...] /usr/bin/python3 /app/armbian-build/lib/tools/aggregation.py
+[0m[👉]    [1;32mSummary: Aggregation: debootstrap: 5; rootfs: 49; image: 3; apt-sources: 0; hash: 4fd2485ba9a61b21[0m
+[0m[👉]    --> (109) [0;36mCOMMAND[0m: rm -f /app/armbian-build/.tmp/work-no-uuidgen-yet-7329-131010/tmp.NjDPPvDL98
+[0m[👉]    --> (109) [1;31mERROR[0m: KERNEL_ONLY is not supported; use new [ [1;31m./compile.sh kernel BOARD=geekbox BRANCH=current kernel[0m ]
+[0m[👉]    --> (109) [1;31mERROR[0m: error! [ [1;31mKERNEL_ONLY is set.This is not supported anymore. Please remove it, and use the new CLI commands. [0m ]
+[0m[💥[0m] [0m    👆👆👆 Showing logfile above 👆👆👆 [[1;31m /app/armbian-build/.tmp/logs-no-uuidgen-yet-7329-131010/015.000.aggregate_packages.log [0m][0m
+[0m[💥[0m] [0mExiting with error 43 [[1;31m at /app/armbian-build/lib/functions/logging/traps.sh:1
+[0;31m                exit_with_error() --> lib/functions/logging/traps.sh:1
+[0;31m       error_if_kernel_only_set() --> lib/functions/general/deprecations.sh:4
+[0;31m   full_build_packages_rootfs_and_image() --> lib/functions/main/default-build.sh:12
+[0;31m          do_with_default_build() --> lib/functions/main/default-build.sh:42
+[0;31m         cli_standard_build_run() --> lib/functions/cli/cli-build.sh:25
+[0;31m        armbian_cli_run_command() --> lib/functions/cli/utils-cli.sh:136
+[0;31m                 cli_entrypoint() --> lib/functions/cli/entrypoint.sh:224
+[0;31m                           main() --> ./compile.sh:50
+ [0m][0m
+[0m[💥[0m] [0mCleaning up [[1;31m please wait for cleanups to finish [0m][0m
+[0m[✨[0m] [0mRepeat Build Options [[1;32m ./compile.sh BOARD=geekbox BRANCH=current BUILD_DESKTOP=no BUILD_MINIMAL=yes EXPERT=yes IGNORE_UBOOT_PATCHES=yes KERNEL_CONFIGURE=no KERNEL_ONLY=no NO_APT_CACHER=yes RELEASE=bookworm [0m][0m
+[0m[🌿[0m] [0mANSI log file built; inspect it by running: [[1;39m less -RS output/logs/log-build-no-uuidgen-yet-7329-131010.log.ans [0m][0m
+[0m[🌱[0m] [0mShare log manually: [[1;32m use one of the commands below (or add SHARE_LOG=yes next time!) [0m][0m
+[0m[🌿[0m] [0mShare log manually: [[1;39m curl --data-binary @output/logs/log-build-no-uuidgen-yet-7329-131010.log.ans https://paste.armbian.com/log [0m][0m
+[0m[🌿[0m] [0mShare log manually: [[1;39m curl --data-binary @output/logs/log-build-no-uuidgen-yet-7329-131010.log.ans https://paste.armbian.de/log [0m][0m
+[0m[🌿[0m] [0mShare log manually: [[1;39m curl --data-binary @output/logs/log-build-no-uuidgen-yet-7329-131010.log.ans https://paste.next.armbian.com/log [0m][0m
+[0m[🌿[0m] [0mShare log manually: [[1;39m curl --data-binary @output/logs/log-build-no-uuidgen-yet-7329-131010.log.ans https://paste.armbian.eu/log [0m][0m
