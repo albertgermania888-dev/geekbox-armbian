@@ -41,8 +41,6 @@ jobs:
             RELEASE=bookworm \
             BUILD_MINIMAL=yes \
             BUILD_DESKTOP=no \
-            KERNEL_ONLY=no \
-            KERNEL_CONFIGURE=no \
             COMPRESS_OUTPUTIMAGE=sha,img,xz \
             EXPERT=yes \
             NO_APT_CACHER=yes
