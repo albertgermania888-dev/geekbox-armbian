@@ -1,0 +1,56 @@
+name: Build Armbian for Geekbox
+
+on:
+  workflow_dispatch: # Позволяет запускать сборку вручную по кнопке
+  push:
+    paths:
+      - 'geekbox.conf' # Автозапуск при изменении конфига
+
+jobs:
+  build:
+    name: Compile Armbian Image
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout our repository
+        uses: actions/checkout@v4
+        with:
+          path: my-repo
+
+      - name: Checkout Armbian Build Framework
+        uses: actions/checkout@v4
+        with:
+          repository: armbian/build
+          path: armbian-build
+          # Можно указать конкретный стабильный релиз, если нужно, раскомментировав строку ниже
+          # ref: v24.8 
+
+      - name: Inject Custom Board Config
+        run: |
+          # Копируем наш конфиг платы в директорию Armbian
+          cp my-repo/geekbox.conf armbian-build/config/boards/geekbox.conf
+
+      - name: Build Armbian Image
+        working-directory: armbian-build
+        run: |
+          # Запускаем сборку. 
+          # EXPERT=yes и флаги ниже нужны, чтобы скрипт не задавал вопросов в консоли.
+          sudo ./compile.sh build \
+            BOARD=geekbox \
+            BRANCH=current \
+            RELEASE=bookworm \
+            BUILD_MINIMAL=yes \
+            BUILD_DESKTOP=no \
+            KERNEL_ONLY=no \
+            KERNEL_CONFIGURE=no \
+            COMPRESS_OUTPUTIMAGE=sha,img,xz \
+            EXPERT=yes \
+            NO_APT_CACHER=yes
+
+      - name: Upload Image Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: armbian-geekbox-image
+          path: armbian-build/output/images/*.xz
+          retention-days: 7
+
