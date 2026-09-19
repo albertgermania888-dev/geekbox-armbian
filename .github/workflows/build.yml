@@ -28,6 +28,11 @@ jobs:
           mkdir -p armbian-build/userpatches
           cp -r userpatches/* armbian-build/userpatches/ || true
 
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64,riscv64,arm,loongarch64
+
       - name: Build Image
         run: |
           cd armbian-build
